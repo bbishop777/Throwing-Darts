@@ -33,5 +33,13 @@ describe('dartScoreModule', function() {
     expect(boundFn).to.throw(TypeError);
     expect(boundFn).to.throw(TypeError, 'Please give me an array');
   });
+
+  it('should throw an error if array has more than 3 scores', function() {
+    var boundFn = dartScoreModule.bind([5, 12, 32, 9]);
+
+    expect(boundFn).to.throw(TypeError);
+    expect(boundFn).to.throw(TypeError, 'Please give me an array with only 3 scores');
+  });
+
 });
 
