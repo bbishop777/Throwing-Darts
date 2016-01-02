@@ -4,7 +4,6 @@ var dartScoreModule=(function(){
     count=0;
     var sum=0;
     var len=arry.length;
-    console.log(arry,"heeeeeeeeeyyyyy");
 
     for(x=0; x<len; x++) {
 

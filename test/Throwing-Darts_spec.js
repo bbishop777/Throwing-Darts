@@ -18,4 +18,12 @@ describe('dartScoreModule', function() {
     expect(result).to.equal(15);
 
   });
+
+  it('should return a total score plus 100 point bonus if given 3 scores from dart throws and each are under 5 points', function(){
+    var result=dartScoreModule([1, 3, 2]);
+
+    expect(result).to.be.a('number');
+    expect(result).to.equal(130);
+
+  });
 });
