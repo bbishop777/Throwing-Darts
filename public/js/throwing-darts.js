@@ -1,11 +1,13 @@
 var dartScoreModule=(function(){
   var score=null;
   function dartScore(arry){
-    count=null;
-    var sum=null;
-    var len=arry.len;
+    count=0;
+    var sum=0;
+    var len=arry.length;
+    console.log(arry,"heeeeeeeeeyyyyy");
+
     for(x=0; x<len; x++) {
-      console.log(len);
+
       if(arry[x] < 5) {
 
         sum=sum +10;
