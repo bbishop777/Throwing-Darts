@@ -1,10 +1,33 @@
 var dartScoreModule=(function(){
+  var score=null;
+  function dartScore(arry){
+    count=null;
+    var sum=null;
+    var len=arry.len;
+    for(x=0; x<len; x++) {
+      console.log(len);
+      if(arry[x] < 5) {
 
-  function dartScore(throwOne, throwTwo, throwThree){
+        sum=sum +10;
+        count= count+1;
 
+      } else if((arry[x])<=10 && (arry[x]>=5)) {
+        sum=sum+5;
+      } else if(arry[x] >10) {
+        sum=sum;
+      }
+    if (count === 3) {
+      sum=sum+100;
+    }
+    }
+    return sum;
 
   }
-  //window.onload = function() {
+ return dartScore;
+})();
+module.exports=dartScoreModule;
+
+//window.onload = function() {
     // var button = document.getElementById('searchbutton').addEventListener('click', function(){
     //   // Get user input from DOM
     //   var text1 = document.getElementById('imageType1').value;
@@ -15,7 +38,3 @@ var dartScoreModule=(function(){
     //   console.log(scoreArray);
     // });
  // };
- return dartScore;
-})();
-module.exports=dartScoreModule;
-
