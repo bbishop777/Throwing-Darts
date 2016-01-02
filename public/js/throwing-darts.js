@@ -4,6 +4,9 @@ var dartScoreModule=(function(){
     count=0;
     var sum=0;
     var len=arry.length;
+    if(!Array.isArray(arry)) {
+      throw new TypeError('Please give me an array');
+    }
 
     for(x=0; x<len; x++) {
 

@@ -26,4 +26,12 @@ describe('dartScoreModule', function() {
     expect(result).to.equal(130);
 
   });
+
+  it('should throw an error if argument is not an array', function() {
+    var boundFn = dartScoreModule.bind(null, 'Hello, there');
+
+    expect(boundFn).to.throw(TypeError);
+    expect(boundFn).to.throw(TypeError, 'Please give me an array');
+  });
 });
+
